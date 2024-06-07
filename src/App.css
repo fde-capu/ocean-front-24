@@ -59,11 +59,14 @@ body {
 .card:hover h2::before {
     top: 0;
     bottom: 0;
+    background: #2277bb;
 }
 
 .card img {
     border-radius: 16px;
     margin-top: 20px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 tag {
