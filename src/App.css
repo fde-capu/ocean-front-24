@@ -1,3 +1,7 @@
+* {
+    transition: all 0.15s ease-in-out;
+}
+
 .card {
     border: 1px solid black;
     padding: 16px;
@@ -5,20 +9,66 @@
     width: 300px;
     text-align: center;
     background: #333;
-    transition: all .15s ease-in-out;
 }
 
 .card:hover {
     translate: -3px -3px;
     rotate: -1deg;
     box-shadow: 3px 3px black;
+    cursor: pointer;
 }
 
 .card h2 {
     font-size: 32px;
     font-family: sans-serif;
+    position: relative;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+.card h2::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    width: 10px;
+    left: 0px;
+    border-radius: 10px;
+    background: #116699;
+    transition: all 0.15s ease-in-out;
+}
+
+.card:hover h2::before {
+    top: 0;
+    bottom: 0;
 }
 
 .card img {
     border-radius: 16px;
+    margin-top: 20px;
 }
+
+tag {
+    background: #222;
+    border: 3px solid #777;
+    color: #ddd;
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    size: 8px;
+}
+
+/*
+Desafio 1
+
+CSS
+Adicionar uma borda à esquerda do título (nome) da personagem com alguma cor
+Quando passar o mouse no Card, mostrar o cursor "Pointer"
+
+HTML + CSS
+Adicionar um elemento de TAG para exibir uma informação adicional para aquele card
+*/
