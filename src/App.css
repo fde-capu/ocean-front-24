@@ -25,7 +25,7 @@ body {
 .card:hover {
     translate: -3px -3px;
     rotate: -1deg;
-    box-shadow: 9px 9px 70px #252525;
+    box-shadow: 9px 29px 70px #252525;
     cursor: pointer;
     background: #393939;
 }
@@ -73,7 +73,7 @@ body {
     max-height: 300px;
 }
 
-tag {
+.tag {
     background: #222;
     border: 3px solid #777;
     color: #ddd;

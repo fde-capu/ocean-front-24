@@ -1,11 +1,11 @@
 export default function Card(props) {
     const item = props.item;
     return (
-        <div class="card">
+        <div className="card">
         <h2>{item.name}</h2>
-        <tag>fool</tag>
-        <tag>scientist</tag>
-        <tag>burps a lot</tag>
+        <div class="tag">fool</div>
+        <div class="tag">scientist</div>
+        <div class="tag">burps a lot</div>
         <img src={item.image} />
         </div>
     )
