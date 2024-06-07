@@ -25,7 +25,7 @@ body {
 .card:hover {
     translate: -3px -3px;
     rotate: -1deg;
-    box-shadow: 3px 3px black;
+    box-shadow: 3px 3px 12px #111;
     cursor: pointer;
     background: #393939;
 }
@@ -42,6 +42,7 @@ body {
 
 .card:hover h2 {
     color: #eee;
+    text-shadow: 0 0 10px #888;
 }
 
 .card h2::before {
