@@ -3,7 +3,7 @@
 }
 
 body {
-    background: #222;
+    background: #444;
 }
 
 .cards {
@@ -25,7 +25,7 @@ body {
 .card:hover {
     translate: -3px -3px;
     rotate: -1deg;
-    box-shadow: 3px 3px 12px #111;
+    box-shadow: 9px 9px 70px #252525;
     cursor: pointer;
     background: #393939;
 }
@@ -48,18 +48,22 @@ body {
 .card h2::before {
     content: "";
     position: absolute;
-    top: 12px;
-    bottom: 12px;
+    top: 40%;
+    bottom: 40%;
     width: 10px;
     left: 0px;
     border-radius: 10px;
     background: #116699;
+    max-height: 16px;
+    transition: all 0.15s ease-in-out;
+    min-height: 16px;
 }
 
 .card:hover h2::before {
     top: 0;
     bottom: 0;
     background: #2277bb;
+    max-height: initial;
 }
 
 .card img {
