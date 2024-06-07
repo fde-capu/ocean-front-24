@@ -23,11 +23,9 @@ function App() {
     <>
       <div className="cards">
         {
-          items.map(function (e) {
-            return (
+          items.map(e => 
               <Card item={e} key={e.name} />
-            )
-          })
+          )
         }
       </div>
     </>
