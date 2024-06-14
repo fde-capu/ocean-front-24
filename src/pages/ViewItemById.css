@@ -1,0 +1,79 @@
+h1 {
+    color: #f1ac43;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    border: 8px solid #0f3ae5;
+    width: 0;
+}
+
+h1:hover {
+    text-decoration: none;
+    color: #5f3bca;
+    transform: rotate(-2deg) scale(2);
+    margin-left: 50%;
+    text-shadow: #fff 0 0 10px;
+    width: 40%;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    font-style: oblique;
+    color: #012345;
+}
+
+a:hover {
+    transform: scaleX(2);
+    text-transform: uppercase;
+    margin-left: 40%;
+    background: #3f5c12;
+    padding: 5px 10px 15px 20px;
+    margin-top: 120px;
+    border-radius: 30px 0 100px 0;
+}
+
+hr {
+    transform: rotate(1.2deg);
+    border: 7px dashed #33f62a;
+}
+
+hr:hover {
+    transform: rotate(-34deg);
+    border: 2px solid #babaca;
+    transform-origin: 30% 0;
+}
+
+h2 {
+    padding: 20px 0 0 2px;
+    background: #876234;
+    display: inline-block;
+    box-shadow: 10px 10px 10px #792309;
+    position: relative;
+    margin: 0 20px;
+}
+
+h2:hover {
+    transform: rotate(360deg);
+    bottom: 73px;
+    left: 123px;
+    box-shadow: 100px 100px 10px #501386;
+}
+
+p {
+    text-decoration-thickness: 20px;
+    text-decoration: underline;
+}
+
+img {
+    position: fixed;
+    width: 800px;
+    height: 800px;
+    transition-duration: 4s;
+}
+
+img:hover {
+    opacity: 0.2;
+    filter: hue-rotate(720deg);
+    width: 120%;
+}
