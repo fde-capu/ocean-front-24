@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
+import ViewItemById from './pages/ViewItemById'
 
 const router = createBrowserRouter([
   {
@@ -8,8 +9,8 @@ const router = createBrowserRouter([
     element: <Home />
   },
 {
-    path: '/teste',
-    element: <div>Awee!</div>
+    path: '/item/:itemId',
+    element: <ViewItemById />
 }
 ])
 
